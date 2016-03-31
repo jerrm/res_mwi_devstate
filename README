@@ -1,0 +1,49 @@
+===========================================
+       MWI Device State Subscriptions 
+===========================================
+
+Updates voice mail hints created by FreePBX.
+
+FreePBX has an option to create voicemail hints allowing a BLF to monitor
+any mailbox.  
+
+See the FreePBX wiki: 
+http://wiki.freepbx.org/display/F2/Subscribe+a+BLF+button+to+Monitor+a+Voicemail
+
+Unfortunately, the module to update the hints is not part of Asterisk. It is 
+provided in the official FreePBX distro as a patch to the distro Asterisk build.
+
+This res_mwi_devstate.c was extracted from the FreePBX disto source rpm at:
+http://yum.freepbxdistro.org/pbx/SRPMS/asterisk/13/asterisk13-13.7.2-1.shmz65.1.94.src.rpm
+
+A Makefile has been added to build and install the module standalone.
+
+
+------------
+Requirements
+------------
+
+Only tested with Asterisk 13. 
+May be OK with other recent versions, but has not been tested.
+
+
+------------
+Installation
+------------
+$ make
+$ make install
+
+
+-----
+Usage
+-----
+
+See the FreePBX wiki:
+http://wiki.freepbx.org/display/F2/Subscribe+a+BLF+button+to+Monitor+a+Voicemail
+
+
+-------
+License
+-------
+The MWI Device State Subscriptions module for asterisk is distributed under the
+GNU General Public License v2. See COPYING for details.
