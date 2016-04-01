@@ -24,7 +24,7 @@ Requirements
 ------------
 
 Only tested with Asterisk 13. 
-May be OK with other recent versions, but has not been tested.
+This version uses the Stasis API adn would not be compatible with Asterisk 11.
 
 
 ------------
